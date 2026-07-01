@@ -8,7 +8,7 @@ export const profile = {
   leadershipQuote:
     'Keberhasilan organisasi tidak hanya diukur dari pertumbuhan, tetapi juga dari kemampuan menjaga amanah, keberlanjutan, dan kepercayaan.',
   email: 'arif.arrahim@gmail.com',
-  phone: '+62 812 3456 7890',
+  phone: '+62 85348101677',
   location: 'Samarinda, Indonesia',
   linkedin: 'https://www.linkedin.com/in/mohamad-arif-arrahim-s-sos-cimm-6b18a7351?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
 }
