@@ -72,20 +72,13 @@ const iconPaths = {
   ),
 }
 
-export function BrandLogo({ className = 'h-12 w-12' }) {
+export function BrandLogo({ className = 'h-14 w-[220px] sm:h-16 sm:w-[280px]' }) {
   return (
-    <span
-      className={`${className} relative grid shrink-0 place-items-center rounded-md border border-blue-400/60 bg-blue-600/10 text-blue-400 shadow-lg shadow-blue-950/30`}
-      aria-label="Mohamad Arif Arrahim logo"
-    >
-      <svg viewBox="0 0 64 64" className="h-[82%] w-[82%]" aria-hidden="true">
-        <path
-          d="M10 50V14l14 20 8-12 8 12 14-20v36h-8V35L34 52h-4L18 35v15h-8Z"
-          fill="currentColor"
-        />
-        <path d="M20 52h24" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
-      </svg>
-    </span>
+    <img
+      src="/images/brand-logo-cropped.png"
+      alt="Mohamad Arif Arrahim logo"
+      className={`${className} shrink-0 object-contain`}
+    />
   )
 }
 

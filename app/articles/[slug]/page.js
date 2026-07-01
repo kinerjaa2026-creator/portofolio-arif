@@ -2,11 +2,13 @@ import ArticleDetail from '@/components/ArticleDetail'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
-export default function ArticleDetailPage({ params }) {
+export default async function ArticleDetailPage({ params }) {
+  const { slug } = await params
+
   return (
     <main>
       <Navbar />
-      <ArticleDetail slug={params.slug} />
+      <ArticleDetail slug={slug} />
       <Footer />
     </main>
   )

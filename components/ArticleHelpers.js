@@ -64,6 +64,24 @@ export async function getSupabaseArticles() {
   return data.map(normalizeArticle)
 }
 
+export async function getSupabaseArticleBySlug(slug) {
+  if (!supabase) {
+    return null
+  }
+
+  const { data, error } = await supabase
+    .from('articles')
+    .select('title,slug,category,excerpt,content,image_url,created_at')
+    .eq('slug', slug)
+    .maybeSingle()
+
+  if (error) {
+    throw error
+  }
+
+  return data ? normalizeArticle(data) : null
+}
+
 export async function getAllArticles() {
   try {
     const databaseArticles = await getSupabaseArticles()
@@ -74,8 +92,19 @@ export async function getAllArticles() {
 }
 
 export async function getArticleBySlug(slug) {
-  const allArticles = await getAllArticles()
-  return allArticles.find((article) => article.slug === slug)
+  const decodedSlug = decodeURIComponent(slug || '')
+
+  try {
+    const databaseArticle = await getSupabaseArticleBySlug(decodedSlug)
+    if (databaseArticle) {
+      return databaseArticle
+    }
+  } catch {
+    // Continue to local/static fallback below.
+  }
+
+  const allArticles = [...getStoredArticles(), ...articles]
+  return allArticles.find((article) => article.slug === decodedSlug)
 }
 
 export async function saveArticle(article) {

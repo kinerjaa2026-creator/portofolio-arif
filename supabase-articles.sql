@@ -11,12 +11,17 @@ create table if not exists articles (
 
 alter table articles enable row level security;
 
+drop policy if exists "Allow public read articles" on articles;
+drop policy if exists "Allow public insert articles" on articles;
+
 create policy "Allow public read articles"
 on articles
 for select
+to anon, authenticated
 using (true);
 
 create policy "Allow public insert articles"
 on articles
 for insert
+to anon, authenticated
 with check (true);

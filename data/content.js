@@ -86,16 +86,19 @@ export const education = [
     degree: 'Master of Islamic Economics',
     institution: 'UIN Sultan Aji Muhammad Idris Samarinda',
     period: '2025 - Present',
+    logo: '/images/logo-uin-samarinda.png',
   },
   {
     degree: 'Bachelor of Law',
     institution: 'Universitas Ngudi Waluyo',
     period: '2024 - Present',
+    logo: '/images/univ_ngudi.png',
   },
   {
     degree: 'Bachelor of Public Administration',
     institution: 'Universitas Kutai Kartanegara',
     period: '2010 - 2017',
+    logo: '/images/unikarta.png',
   },
 ]
 

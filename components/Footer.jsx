@@ -19,8 +19,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex items-center gap-4 lg:justify-end">
-          <BrandLogo className="h-14 w-14" />
+        {/* <div className="flex items-center gap-4 lg:justify-end">
+          <BrandLogo className='h-14 w-[220px] sm:h-16 sm:w-[280px]'  />
           <div>
             <p className="text-lg font-semibold">
               Mohamad Arif Arrahim, S.Sos., CIMM
@@ -30,7 +30,7 @@ export default function Footer() {
               &copy; 2026 All Rights Reserved
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   )

@@ -64,8 +64,8 @@ export default function ArticleForm() {
           Tambah berita atau artikel baru
         </h1>
         <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">
-          Isi judul, gambar, ringkasan, dan isi artikel. Untuk saat ini data
-          tersimpan di browser ini melalui localStorage.
+          Isi judul, gambar, ringkasan, dan isi artikel. Data akan disimpan ke
+          Supabase jika koneksi dan policy database sudah aktif.
         </p>
 
         <form onSubmit={handleSubmit} className="profile-panel mt-9 grid gap-6 p-6 md:p-8">

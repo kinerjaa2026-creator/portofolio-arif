@@ -56,8 +56,8 @@ export default function Hero() {
 
         <div className="float-slow relative hidden h-[560px] self-end md:block lg:h-[610px]">
           <Image
-            src="/images/executive-portrait.png"
-            alt="Professional executive portrait placeholder"
+            src="/images/arif-branded-portrait.png"
+            alt="Mohamad Arif Arrahim professional executive portrait"
             fill
             priority
             className="object-cover object-top"

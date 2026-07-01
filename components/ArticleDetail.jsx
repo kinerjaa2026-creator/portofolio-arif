@@ -9,10 +9,10 @@ export default function ArticleDetail({ slug }) {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    getArticleBySlug(slug).then((result) => {
-      setArticle(result)
-      setIsLoading(false)
-    })
+    getArticleBySlug(slug)
+      .then(setArticle)
+      .catch(() => setArticle(null))
+      .finally(() => setIsLoading(false))
   }, [slug])
 
   if (isLoading) {
