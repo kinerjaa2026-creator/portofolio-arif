@@ -1,13 +1,13 @@
 export const profile = {
   name: 'Mohamad Arif Arrahim',
-  title: 'S.Sos., CIMM',
+  title: 'S.Sos., CIMM,  CPFA®',
   roleLine:
     'Director | Islamic Finance Practitioner | Corporate Governance Professional',
   quote:
     'Leading sustainable growth through Sharia values, governance excellence, and strategic leadership.',
   leadershipQuote:
     'Keberhasilan organisasi tidak hanya diukur dari pertumbuhan, tetapi juga dari kemampuan menjaga amanah, keberlanjutan, dan kepercayaan.',
-  email: 'arif.arrahim@gmail.com',
+  email: 'arifkrkc1@gmail.com',
   phone: '+62 85348101677',
   location: 'Samarinda, Indonesia',
   linkedin: 'https://www.linkedin.com/in/mohamad-arif-arrahim-s-sos-cimm-6b18a7351?utm_source=share_via&utm_content=profile&utm_medium=member_ios',

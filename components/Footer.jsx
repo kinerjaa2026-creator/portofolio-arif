@@ -13,7 +13,7 @@ export default function Footer() {
             <a href={`mailto:${profile.email}`}>{profile.email}</a>
             <a href={`tel:${profile.phone}`}>{profile.phone}</a>
             <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">
-              M. Arif Arrahim, S.Sos., CIMM
+              M. Arif Arrahim, S.Sos., CIMM, CPFA®
             </a>
             <span>{profile.location}</span>
           </div>
