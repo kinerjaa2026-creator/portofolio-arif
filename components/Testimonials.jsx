@@ -131,9 +131,9 @@ export default function Testimonials() {
   }
 
   return (
-    <section className="bg-primary-dark py-10 text-white">
+    <section className="bg-primary-dark py-8 text-white">
       <div className="section-shell">
-        <div className="mb-6 flex items-center gap-5">
+        <div className="mb-5 flex items-center gap-5">
           <div className="h-px flex-1 bg-white/20" />
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-slate-200">
             Testimonial
@@ -141,10 +141,10 @@ export default function Testimonials() {
           <div className="h-px flex-1 bg-white/20" />
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-[0.82fr_1.18fr]">
+        <div className="grid gap-6 lg:grid-cols-[0.82fr_1.18fr]">
           <form
             onSubmit={handleSubmit}
-            className="rounded-md border border-white/10 bg-white/[0.06] p-5 shadow-[0_18px_48px_rgba(0,0,0,0.18)] backdrop-blur-md"
+            className="rounded-md border border-white/10 bg-white/[0.06] p-4 shadow-[0_18px_48px_rgba(0,0,0,0.18)] backdrop-blur-md lg:p-5"
           >
             <h2 className="text-xl font-semibold">Tulis Testimoni</h2>
             <p className="mt-2 text-sm leading-6 text-slate-300">
@@ -163,7 +163,7 @@ export default function Testimonials() {
               </div>
             ) : null}
 
-            <div className="mt-5 grid gap-4">
+            <div className="mt-4 grid gap-3">
               <label className="grid gap-2">
                 <span className="text-sm font-medium text-slate-200">Nama</span>
                 <input
@@ -189,7 +189,7 @@ export default function Testimonials() {
                 <span className="text-sm font-medium text-slate-200">Testimoni</span>
                 <textarea
                   required
-                  rows={5}
+                  rows={3}
                   value={quote}
                   onChange={(event) => setQuote(event.target.value)}
                   className="rounded-md border border-white/10 bg-white px-4 py-3 text-sm leading-7 text-slate-950 outline-none ring-blue-200 transition placeholder:text-slate-400 focus:border-blue-500 focus:ring-4"
@@ -207,20 +207,20 @@ export default function Testimonials() {
             </div>
           </form>
 
-          <div className="grid gap-4">
+          <div className="grid max-h-[430px] gap-3 overflow-y-auto pr-2 sm:max-h-[500px] lg:max-h-[540px]">
             {items.map((item) => (
               <article
                 key={item.id || item.name}
-                className="rounded-md border border-white/10 bg-white/[0.05] p-5 transition duration-300 hover:bg-white/10"
+                className="rounded-md border border-white/10 bg-white/[0.05] p-4 transition duration-300 hover:bg-white/10"
               >
-                <p className="text-5xl font-semibold leading-none text-blue-500">
+                <p className="text-4xl font-semibold leading-none text-blue-500">
                   &quot;
                 </p>
-                <p className="-mt-4 text-sm italic leading-7 text-slate-100">
+                <p className="-mt-3 text-sm italic leading-6 text-slate-100">
                   {item.quote}
                 </p>
-                <div className="mt-5 flex items-center gap-3">
-                  <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white text-xs font-semibold text-primary-dark">
+                <div className="mt-4 flex items-center gap-3">
+                  <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-white text-xs font-semibold text-primary-dark">
                     {getInitials(item.name)}
                   </span>
                   <div>
