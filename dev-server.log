@@ -1,0 +1,14 @@
+
+> portofolio-arif@0.1.0 dev
+> next dev --webpack --hostname 127.0.0.1 --port 3000
+
+▲ Next.js 16.2.9 (webpack)
+- Local:         http://127.0.0.1:3000
+- Network:       http://127.0.0.1:3000
+- Environments: .env.local
+✓ Ready in 3.9s
+
+○ Compiling / ...
+ GET / 200 in 9.7s (next.js: 7.8s, application-code: 1853ms)
+ GET / 200 in 896ms (next.js: 19ms, application-code: 877ms)
+ GET / 200 in 688ms (next.js: 15ms, application-code: 673ms)
