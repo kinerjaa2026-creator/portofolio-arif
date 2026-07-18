@@ -31,28 +31,28 @@ export default function Hero() {
           <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-primary-dark via-primary-dark/70 to-transparent md:hidden" />
         </div>
 
-        <div className="reveal relative z-10 max-w-[86%] pb-12 sm:max-w-[72%] md:col-start-1 md:row-start-1 md:max-w-none md:pb-20">
-          <p className="eyebrow mb-5 text-blue-400">Executive Profile</p>
-          <h1 className="font-sans text-[clamp(2rem,10vw,3rem)] font-bold leading-[1.08] tracking-normal sm:text-5xl lg:text-6xl xl:text-7xl">
+        <div className="reveal relative z-10 max-w-[70%] pb-8 sm:max-w-[72%] sm:pb-12 md:col-start-1 md:row-start-1 md:max-w-none md:pb-20">
+          <p className="eyebrow mb-3 text-[10px] text-blue-400 sm:mb-5 sm:text-[11px]">Executive Profile</p>
+          <h1 className="font-sans text-[clamp(1.5rem,7.4vw,2.25rem)] font-bold leading-[1.08] tracking-normal sm:text-5xl lg:text-6xl xl:text-7xl">
             {profile.name},{' '}
             <span className="text-accent-light">{profile.title}</span>
           </h1>
-          <p className="reveal reveal-delay-1 mt-5 max-w-3xl text-base font-medium leading-8 text-amber-200 lg:text-lg">
+          <p className="reveal reveal-delay-1 mt-3 max-w-[17rem] text-sm font-medium leading-6 text-amber-200 sm:mt-5 sm:max-w-3xl sm:text-base sm:leading-8 lg:text-lg">
             {profile.roleLine}
           </p>
-          <blockquote className="reveal reveal-delay-2 mt-7 max-w-xl border-l-2 border-accent pl-5 text-lg italic leading-8 text-slate-100">
+          <blockquote className="reveal reveal-delay-2 mt-5 max-w-[16rem] border-l-2 border-accent pl-4 text-sm italic leading-6 text-slate-100 sm:mt-7 sm:max-w-xl sm:pl-5 sm:text-lg sm:leading-8">
             &quot;{profile.quote}&quot;
           </blockquote>
-          <div className="reveal reveal-delay-3 mt-9 flex flex-wrap gap-3 sm:gap-4">
+          <div className="reveal reveal-delay-3 mt-6 flex max-w-[15rem] flex-wrap gap-2 sm:mt-9 sm:max-w-none sm:gap-4">
             <a
               href="#about"
-              className="rounded-md bg-blue-700 px-4 py-3 text-xs font-semibold uppercase tracking-wide text-white shadow-lg shadow-blue-950/30 transition duration-200 hover:-translate-y-1 hover:bg-blue-600 sm:px-6"
+              className="rounded-md bg-blue-700 px-3 py-2 text-[10px] font-semibold uppercase tracking-wide text-white shadow-lg shadow-blue-950/30 transition duration-200 hover:-translate-y-1 hover:bg-blue-600 sm:px-6 sm:py-3 sm:text-xs"
             >
               View Profile
             </a>
             <a
               href="/cv_M.arif_arrahim.pdf"
-              className="rounded-md border border-accent/60 px-4 py-3 text-xs font-semibold uppercase tracking-wide text-white transition duration-200 hover:-translate-y-1 hover:bg-accent hover:text-primary-dark sm:px-6"
+              className="rounded-md border border-accent/60 px-3 py-2 text-[10px] font-semibold uppercase tracking-wide text-white transition duration-200 hover:-translate-y-1 hover:bg-accent hover:text-primary-dark sm:px-6 sm:py-3 sm:text-xs"
             >
               Download CV
             </a>
@@ -60,7 +60,7 @@ export default function Hero() {
               href={profile.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-md border border-accent/60 px-4 py-3 text-xs font-semibold uppercase tracking-wide text-white transition duration-200 hover:-translate-y-1 hover:bg-accent hover:text-primary-dark sm:px-6"
+              className="rounded-md border border-accent/60 px-3 py-2 text-[10px] font-semibold uppercase tracking-wide text-white transition duration-200 hover:-translate-y-1 hover:bg-accent hover:text-primary-dark sm:px-6 sm:py-3 sm:text-xs"
             >
               Connect on LinkedIn
             </a>
